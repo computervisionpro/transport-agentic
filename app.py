@@ -58,7 +58,7 @@ async def main():
             """,
             model="gpt-5.6-luna",
             model_settings={
-                            "reasoning": {"effort": "low"},
+                            "reasoning": {"effort": "medium"},
                             "verbosity": "medium",
                             },
             mcp_servers=[mcp_server],
