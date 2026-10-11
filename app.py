@@ -23,6 +23,7 @@ async def main():
                 "excluded records, and timetable limitations.")
 
     print("\nQ:", redact_text(question))
+    print("\n\n Keep all the csv files closed before running the program")
 
     # start server.py and establishes an MCP connection with agent, then close it
     async with MCPServerStdio(
@@ -47,6 +48,8 @@ async def main():
             Mention a data-quality or REC-114 limitation only when it could
             change the answer. Keep caveats to one short sentence. Also mention that 
             the threshold for on time is taken as 4 minutes or less, based on data provided.
+            Mention that few R-35 trips are too delayed, which could be due to incorrect GPS data, 
+            when R-35 is mentioned in the user's question or the answer.
 
             Never include rider phone numbers or verbatim complaint text.
             Refer to complaints only by ticket ID and category, if provided.
