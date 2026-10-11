@@ -36,7 +36,7 @@ The answer is printed in the terminal. Processing also writes `trips_processed.c
 
 1. `ops_logic.py` reads `trips.csv` and uses `schedule_v2.csv` file for updated value, handles Excel serial datetimes, normalizes actual arrival timestamps to Indian time (IST +5:30), and calculates runtime, delay, and on-time status. It also creates a flag highlighting whether a row is valid or not.
 2. `server.py` exposes MCP tools: `route_performance` for route summaries and `trip_level_information` for filtered trip records.
-3. `app.py` starts the MCP server and gives its tools to the OpenAI agent. The agent selects the appropriate tool, uses its returned data, and provides a concise answer. The terminal also prints the called tool names.
+3. `app.py` starts the MCP server and gives its tools to the OpenAI agent. The agent selects the appropriate tool, uses its returned data, and provides a an answer.
 
 ## Key Rules
 
