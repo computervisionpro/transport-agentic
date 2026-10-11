@@ -31,7 +31,8 @@ python app.py Which routes were late on 2026-08-03?
 ```
 
 The answer is printed in the terminal. Processing also writes `trips_processed.csv` (processed trip data) and `summary_data.csv` (route metrics) for debugging and review.
-*Make sure to keep all the csv files closed before running the program* 
+
+*Note:- Make sure to keep all the csv files closed before running the program* 
 
 ## How It Works
 
