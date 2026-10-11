@@ -1,0 +1,7 @@
+openai-agents
+mcp
+pandas
+pydantic
+python-dotenv
+pytest
+numpy
